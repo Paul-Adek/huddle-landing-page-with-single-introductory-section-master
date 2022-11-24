@@ -1,0 +1,120 @@
+body {
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(images/bg-desktop.svg);
+  background-size: contain;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.image img {
+  width: 170px;
+  padding: 40px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 90px;
+}
+.container img {
+  width: 600px;
+  margin-top: -40px;
+}
+.text-box {
+  color: white;
+  margin-left: 50px;
+}
+button {
+  border: none;
+  padding: 15px 50px;
+  border-radius: 30px;
+  color: hsl(257, 40%, 49%);
+  box-shadow: 0px 10px 15px hsl(257, 53%, 48%);
+}
+button:hover {
+  cursor: pointer;
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+h1 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+.icon {
+  margin-left: 300px;
+  margin-right: -150px;
+  text-align: center;
+}
+i {
+  width: 30px;
+  font-size: 1.6em;
+  margin-top: 180px;
+  border: solid 1px white;
+  padding: 7px 5px;
+  border-radius: 35px;
+}
+i:hover {
+  cursor: pointer;
+  background-color: none;
+  color: hsl(300, 69%, 71%);
+  border: solid 1px hsl(300, 69%, 71%);
+}
+
+.attribution {
+  margin-top: -180px;
+}
+@media only screen and (max-width: 375px) {
+  body {
+    width: 375px;
+    background-image: url(images/bg-mobile.svg);
+    background-size: contain;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  .container img {
+    width: 250px;
+    margin-top: 30px;
+  }
+  .image img {
+    width: 130px;
+    padding: 20px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: -50px;
+    padding: 15px 5px;
+  }
+  .text-box {
+    color: white;
+    padding: 30px;
+    font-size: small;
+    margin-left: -30px;
+    background-color: hsl(257, 40%, 49%);
+    margin-bottom: 30px;
+  }
+  .attribution {
+    margin-top: -55px;
+    background-color: hsl(257, 40%, 49%);
+    height: 90px;
+  }
+  button {
+    padding: 10px 70px;
+  }
+  .icon {
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+  }
+  i {
+    border-radius: 30px;
+    margin-top: 20px;
+    font-size: 1.3em;
+    padding: 9px 2px;
+  }
+}
